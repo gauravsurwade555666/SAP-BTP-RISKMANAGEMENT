@@ -1,0 +1,112 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/RiskMobile/Services/RiskManagementService.service",
+		"EntitySet": "Risks",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/RiskMobile/Rules/RiskManagementService/Risks/NavToRisks_Edit.js",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/RiskMobile/Rules/RiskManagementService/Risks/Risks_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Risks_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{title}",
+						"Subhead": "{createdAt}",
+						"BodyText": "",
+						"Footnote": "{modifiedAt}",
+						"Description": "{createdBy}",
+						"StatusText": "{modifiedBy}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{prio}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "$(L,CreatedAt)",
+							"Value": "{createdAt}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "$(L,CreatedBy)",
+							"Value": "{createdBy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "$(L,ChangedAt)",
+							"Value": "{modifiedAt}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "$(L,ChangedBy)",
+							"Value": "{modifiedBy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "title",
+							"Value": "{title}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "prio",
+							"Value": "{prio}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "descr",
+							"Value": "{descr}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "impact",
+							"Value": "{impact}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "criticality",
+							"Value": "{criticality}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "supplier_BusinessPartner",
+							"Value": "{supplier_BusinessPartner}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Risks_Detail"
+}
